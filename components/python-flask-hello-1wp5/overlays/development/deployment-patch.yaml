@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: python-flask-hello-1wp5
+  namespace: burrzinga-hac-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/python/python-flask-hello-1wp5@sha256:a8d62b3d2d0a05ebb8631075c17c94435efc29512ae0e41a69c8fadede465ab8
+        name: my-python
+        resources: {}
+status: {}
